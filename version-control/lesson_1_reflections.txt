@@ -1,7 +1,7 @@
 1. How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
-Viewing a diff between two versions of a file helped me see the bug in the code because it clearly marks where there are conflicts between the two files. There are special marker symbols as well. I did not have to waste time scanning through each line of code to find those differences.
+	Viewing a diff between two versions of a file helped me see the bug in the code because it clearly marks where there are conflicts between the two files. There are special marker symbols as well. I did not have to waste time scanning through each line of code to find those differences.
 
 
 cd ~                          # change directories to your home directory
@@ -17,10 +17,10 @@ https://www.udacity.com/wiki/ud775/sublime
 
 
 
-How could having easy access to the entire history of a file make you a more
+2. How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-    Fill in your answer here
+	When a programmer looks at a file's history, he or she would be able to study and determine what standards or guidelines were preferred by the previous creators. It would also reveal historical logic, revealing what strategies were previously used and possibly why that logic was or was not kept. It could also help you understand the relevancy of the file. For example, perhaps the file was created a decade ago
 
 What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
