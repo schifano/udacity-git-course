@@ -1,7 +1,7 @@
 1. How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
-    Fill in your answer here
+Viewing a diff between two versions of a file helped me see the bug in the code because it clearly marks where there are conflicts between the two files. There are special marker symbols as well. I did not have to waste time scanning through each line of code to find those differences.
 
 
 cd ~                          # change directories to your home directory
