@@ -22,11 +22,11 @@ efficient programmer in the long term?
 
 	When a programmer looks at a file's history, he or she would be able to study and determine what standards or guidelines were preferred by the previous creators. It would also reveal historical logic, revealing what strategies were previously used and possibly why that logic was or was not kept. It could also help you understand the relevancy of the file. For example, perhaps the file was created a decade ago
 
-What do you think are the pros and cons of manually choosing when to create a
+3. What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 
-	Manually committing puts full responsibility on the developer for properly tracking and bundling their commits.
+	Manually committing puts full responsibility on the developer for properly tracking and bundling their commits. Automatic saving means that the system would save at time intervals that may not correspond to logical bundles of code.
 
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
