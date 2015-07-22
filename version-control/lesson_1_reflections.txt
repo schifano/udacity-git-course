@@ -13,8 +13,12 @@ subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflect
 pwd # print working directory - shows what directory you are in
 ls  # list the files in this directory
 
+
 https://www.udacity.com/wiki/ud775/sublime
 
+
+git config --global color.ui auto
+get colored diff output
 
 
 2. How could having easy access to the entire history of a file make you a more
@@ -28,20 +32,20 @@ docs does?
 
 	Manually committing puts full responsibility on the developer for properly tracking and bundling their commits. Automatic saving means that the system would save at time intervals that may not correspond to logical bundles of code.
 
-Why do you think some version control systems, like Git, allow saving multiple
+4. Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
     Fill in your answer here
 
-How can you use the commands git log and git diff to view the history of files?
+5. How can you use the commands git log and git diff to view the history of files?
 
     Fill in your answer here
 
-How might using version control make you more confident to make changes that
+6. How might using version control make you more confident to make changes that
 could break something?
 
     Fill in your answer here
 
-Now that you have your workspace set up, what do you want to try using Git for?
+7. Now that you have your workspace set up, what do you want to try using Git for?
 
     Fill in your answer here
