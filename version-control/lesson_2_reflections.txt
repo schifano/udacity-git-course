@@ -20,3 +20,38 @@ manually?
 Notes:
 
 If you accidentally add a file to the staging area, you can remove it using git reset. For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, run git reset lesson_2_reflections.txt and the file will be removed from the staging area, but it will still be in your working directory.
+
+git diff
+With no arguments, git diff will compare the working area and the staging area. 
+
+git diff --staged
+changes made that are staged
+
+git reset --hard
+reset anything in working directory or staging area
+careful, because you haven't committed these, cant get them back
+
+detached head? run
+git checkout master
+
+detached means, looking at a commit that is not labeled with a branch name
+
+git branch, shows branches
+git branch [args], creates a new branch
+
+remote branch, did not create yourself
+
+--word (this is a flag)
+
+git log --graph --oneline master coins
+
+Reachability
+
+
+If you delete a branch, you're essentially deleting the label for that branch. The commits are still there, but they are unreachable, so it's like they are not there. You want to merge your branch into the master before deleting a branch. Commits merged into master may be shown as interleaved based on the time they were created.
+
+git merge master coins (automatic merge)
+
+git show, show difference between a commit and its parent without knowing what the parent was.
+
+If you want to merge branch2 into branch1, you can simply git checkout branch1 and then type git merge branch2. The only reason to type git merge branch1 branch2 is if it helps you keep better mental track of which branches you are merging.
