@@ -1,29 +1,33 @@
-When would you want to use a remote repository rather than keeping all your work
+1. When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+	You would want to keep your work on a remote repository for collaboration purposes. A remote repository will allow other users to contribute and make changes to a project, making the project easily distributable across potential developers and users. In addition, having your work on a remote repository will provide redundancy. Keeping your work strictly on your local drive means that your project is at risk of being lost if your drive fails.
 
-Why might you want to always pull changes manually rather than having Git
+2. Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+	Doing a git pull is the same as doing a git fetch and then a git merge. Having Git automatically do a git pull would more frequently cause conflicts as you are updating your code. This is problematic because, although it would help you stay up to date, your code may not always be ready for conflicts to be introduced and resolved. It would be very interruptive to the developer focusing on fixing a bug or finishing a feature. It is best for the developer to decide when to update their code.
 
-Describe the differences between forks, clones, and branches.  When would you
+3. Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+	Forks - Fork creates a copy of a repository for you exclusively on GitHub. Forks can be good for proposing bug fixes or changes to code. A user can make changes on a project without interfering with the original version, and the owner of the repository could be given the option to review changes and determine if a merge should occur.
 
-What is the benefit of having a copy of the last known state of the remote
+	Clones - Cloning will create a copy of a repository in a chosen directory. git clone will first create a new empty repository (git init) and sets the given repository as a remote (git remote) then transfers all commits from the remote repository to the current repository (git fetch). Cloning is good when you are interested in tracking a project locally to work on. 
+
+	Branches - Branches are paths or deviations from a master branch. Branches are excellent for separating different versions of a project without interrupting the working master branch.
+
+4. What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+  If you are making changes to your project and introduce a bug, you would be able to revert back to a previous working copy. 
 
-How would you collaborate without using Git or GitHub?  What would be easier,
+5. How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+  You could collaborate using any other version control system like SVN. You could also modify files directly on a server. However, that would cause complications especially when this could make changes directly in production and may cause overrides of other people's work. You could also use Dropbox, but it would be harder to bundle code in logical segments of change.
 
-When would you want to make changes in a separate branch rather than directly in
-master?  What benefits does each approach have?
+6. When would you want to make changes in a separate branch rather than directly in
+master? What benefits does each approach have?
 
-    Fill in your answer here
+	You would want to make changes in a separate branch whenever you want to make changes that could potentially introduce a bug, or to just avoid making any changes to the working copy on the master. This is especially useful if you are not the only collaborator. If you are the only collaborator, making changes on the master could be fine, but it would be harder to separate out history.
