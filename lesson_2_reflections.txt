@@ -55,3 +55,23 @@ git merge master coins (automatic merge)
 git show, show difference between a commit and its parent without knowing what the parent was.
 
 If you want to merge branch2 into branch1, you can simply git checkout branch1 and then type git merge branch2. The only reason to type git merge branch1 branch2 is if it helps you keep better mental track of which branches you are merging.
+
+-v stands for verbose, to output more information
+git remote -v
+
+git remote origin
+(if your repository is empty)
+
+clone from a repository, already creates a remote.
+
+git fetch
+
+git pull origin master =
+	git fetch origin
+	git merge master origin/master
+
+git log origin/master
+	origin/master won't show commits that are present on your local master but not GitHub.
+
+Fast-forward merge
+	can you reach a from b? then you can fast forward
