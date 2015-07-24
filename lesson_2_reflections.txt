@@ -1,23 +1,37 @@
-What happens when you initialize a repository? Why do you need to do it?
+1. What happens when you initialize a repository? Why do you need to do it?
+	
+	Initializing a git repository will create a .git subdirectory in the project root, containing all the necessary metadata for the repo. If you do not create a README first (like through GitHub) the repo will be empty. You need to initialize a repo so that git knows to begin tracking files within that repo.
 
-How is the staging area different from the working directory and the repository?
+2. How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-How can you use the staging area to make sure you have one commit per logical
+	The staging area is like a loading dock for future commits to be shipped away to the repository. The working directory is where your current version of a project is checked out and placed on your local computer to modify. However, a staging area is not where you modify changes to a project, but instead where you add changes. The repository is where commits from staging are pushed to and tracked for a project. The value of a staging area is that it offers a place for pending repo files, and if the developer should change their mind, they would be able to remove files from the staging area.
+
+3. How can you use the staging area to make sure you have one commit per logical
 change?
 
-What are some situations when branches would be helpful in keeping your history
+	The staging area is like a shelf for logical changes. Sometimes significant project changes like feautres require several logical changes that may make sense to bundle when pushing to the repo. As you are working on a feature, you can bundle each logical change and add them to the staging area so that you do not have to manually track every single logical change - you can just focus on the next change to be made.
+
+4. What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+	Branches are helpful in keeping your history organized by allowing several project versions to co-exist within your repository. For example, let us suppose you have a working iOS application. You would now like to make experimental changes to the user interface	and your friend would like to add a feature for push notifications. The original working version could be retained on the master branch while you create a branch called "ui-experiment" and your friend creates a branch called "feature-push-notifications." In this way, branches would keep your project changes separate so that you each do not run into conflicts with each other unless you intend to merge final changes. Brnaches may also be helpful when doing bug fixes on an application for a team.
 
-What is the result of merging two branches together? Why do we represent it in
+5. How do the diagrams help you visualize the branch structure?
+
+	Diagrams help you visualize the branch structure by showing you which branches or commits have reachability. They also help show where in the history or chronological timeline certain branches and commits exist. They may also help a developer determine what ways are most logical to merge.
+
+6. What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+	The result of merging two branchces together is a single branch that incorporates changes from both branches.
+
+7. What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 
-Notes:
+	Automatic merging can be useful because it removes the stress of merging from the user. However, Git may not always know the ideal way that a user intends for files to be merged. Always doing merges manually would ensure that the changes you intend to make and merge are there. However, if the merge is very simple and straight forward, it may take unnecessary time to do manually.	
+
+# Notes
 
 If you accidentally add a file to the staging area, you can remove it using git reset. For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, run git reset lesson_2_reflections.txt and the file will be removed from the staging area, but it will still be in your working directory.
 
@@ -46,7 +60,6 @@ remote branch, did not create yourself
 git log --graph --oneline master coins
 
 Reachability
-
 
 If you delete a branch, you're essentially deleting the label for that branch. The commits are still there, but they are unreachable, so it's like they are not there. You want to merge your branch into the master before deleting a branch. Commits merged into master may be shown as interleaved based on the time they were created.
 
