@@ -49,3 +49,7 @@ https://www.udacity.com/wiki/ud775/sublime
 
 git config --global color.ui auto
 get colored diff output
+
+Delete branches (http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely)
+git push origin --delete <branchName> (remote)
+git branch -d <branchName> (local)
